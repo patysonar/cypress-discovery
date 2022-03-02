@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+</head>
+<body>
+  
+   <h1>CNH</h1>    <!--// Dá aula Arrays e Loops -->
+   <input type = "text" name = "nome" placeholder="Seu primeiro nome"/>
+   <input type = "number" name = "idade" placeholder="Sua idade"/>
+   <button type = "button" onclick="verificarIdade()">Verificar Idade</button> <!--//instrução da função -->
+
+   <h1>Vingadores</h1> 
+
+   <button type = "button" onclick="listaVingadores()">Listar Vingadores</button>
+
+<ul id="avengers">  <!-- // não tem relação com o avengers da variavél var do array -->   
+</ul>
+
+    <script type="text/javascript">
+
+////----**** Aula Arrays e Loops ****----////
+
+//// API - exemplo
+var avengers = ['Tony Stack' ,'Clint Barton', 'Natasha Romanoff', 'Steve Roger'] // Array
+
+function listaVingadores(){
+
+   var ul = document.getElementById('avengers')
+   ul.innerHTML = ''
+
+    avengers.forEach(function(a){
+
+        var li = document.createElement('li')
+        var text = document.createTextNode(a)
+        li.appendChild(text)
+        ul.appendChild(li)
+       
+    })
+}
+
+
+function verificarIdade(){      //Padrão de nomeclatura camelcase "verificarIdade" minusculo e a outra palavra em maiusculo
+        var nome = document.querySelector('input[name=nome]') 
+        var idade = document.querySelector('input[name=idade]')
+
+        if (idade.value.length == 0){  // validação  de campo obrigatório
+            alert('Idade é um campo obrigatório.')
+            return
+        } 
+
+        var idadeNum = parseInt(idade.value)
+
+        
+        if (idadeNum >= 18){     //Controle de fluxo
+            alert ('Ok, você pode tirar sua CNH.')
+        } else if (idadeNum > 4) {
+            alert('Você é menor de idade, por enquanto sugiro andar de bike.')
+        } else {
+            alert('Melhor você tomar leite....')
+        }
+
+
+}
+
+    </script>
+</body>
+</html>

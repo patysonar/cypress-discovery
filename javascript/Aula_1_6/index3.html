@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+</head>
+<body>
+  
+   <h1>CNH</h1>    <!--// Dá aula de Funções -->
+   <input name = "nome" placeholder="Seu primeiro nome"/>
+   <input name = "idade" placeholder="Sua idade"/>
+    <button type = "button" onclick="verificarIdade()">Verificar Idade</button> <!--//instrução da função -->
+
+    <script type="text/javascript">
+
+////----**** Aula Trabalhando com Funções ****----////
+
+function verificarIdade(){  //Padrão de nomeclatura camelcase "verificarIdade" minusculo e a outra palavra em maiusculo
+        var nome = document.querySelector('input[name=nome]') 
+        var idade = document.querySelector('input[name=idade]') 
+
+        console.log(nome.value)
+        console.log(idade.value)
+
+}
+
+    </script>
+</body>
+</html>

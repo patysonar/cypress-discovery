@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Discovery</title>
+</head>
+<body>
+   <h1>Olá, <span id= "nome"> </span></h1>  <!--//  Dá aula de  Prompt -->
+
+   
+    <script type="text/javascript">
+
+
+////----**** Aula Prompt e conversão de valores ****----////
+        var nome = prompt("Qual seu nome?"); 
+        var recebeIdade = prompt("Informe sua idade."); 
+        
+        var idade = parseInt(recebeIdade); // conversão de valores dentro do javascript com a tipagem correta numero ao invés de string
+
+         console.log(nome);
+         console.log(typeof nome);
+
+         console.log(idade);
+         console.log(typeof idade);
+        
+        document.getElementById("nome").innerText = nome;
+
+//Obs: Resultado ver no console do navegador
+    </script>
+</body>
+</html>
