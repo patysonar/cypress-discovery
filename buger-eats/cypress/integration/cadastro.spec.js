@@ -58,6 +58,15 @@ describe('Cadastro', () => {  /// Se chama hero function
         ////****Aula - Upload de arquivos ****////
         cy.get('input[accept^="image"]').attachFile('/images/' + entregador.cnh)
 
+        ////****Submetendo forms e validando modal ****////
+        cy.get('form button[type="submit"]').click()
+        
+        const expectedMessage = 'Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato'  //// Valor constante que não vai mudar
+
+        cy.get('.swal2-container .swal2-html-container')
+            .should('be.visible', expectedMessage)
+           
+
     })
 
 })
