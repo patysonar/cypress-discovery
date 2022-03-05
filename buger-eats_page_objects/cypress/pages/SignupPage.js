@@ -54,4 +54,4 @@ class SignupPage {  // Vai representar a página de cadastro
     }
 }
 
-export default SignupPage;
+export default new SignupPage; // Exporta os instanciados

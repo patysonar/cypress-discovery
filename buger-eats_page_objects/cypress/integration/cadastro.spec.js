@@ -1,27 +1,7 @@
-import SignupPage from '../pages/SignupPage'
+ ////**** Aula - Export default new Page ****////
+import signup from '../pages/SignupPage' //Instancia  da página para os casos de testes
 
 describe('Cadastro', () => {      /// Se chama hero function
-
-    ////**** Aula - Export default new Page ****////
-    var signup = new SignupPage()  //Instancia  da página para os casos de testes
-
-    ////**** Aula - Entendendo os ganchos do Cypress ****////
-    //**Só foi para mostrar como funciona os ganchos
-    // before(function () {
-    //     cy.log('Tudo aqui é executdo uma única vez ANTES de TODOS os casos de testes')
-    // })
-
-    // beforeEach(function () {
-    //     cy.log('Tudo aqui é executdo sempre ANTES de CADA caso de teste')
-    // })
-
-    // after(function () {
-    //     cy.log('Tudo aqui é executdo uma única vez DEPOIS de TODOS os casos de testes')
-    // })
-
-    // afterEach(function () {
-    //     cy.log('Tudo aqui é executdo sempre DEPOIS de CADA caso de teste')
-    // })
 
     it('Usuario deve se tornar um entregador', () => {
         ////**** Aula - Refatorando a massa de testes para inglês ****////
