@@ -2,6 +2,9 @@ import SignupPage from '../pages/SignupPage'
 
 describe('Cadastro', () => {      /// Se chama hero function
 
+    ////**** Aula - Export default new Page ****////
+    var signup = new SignupPage()  //Instancia  da página para os casos de testes
+
     ////**** Aula - Entendendo os ganchos do Cypress ****////
     //**Só foi para mostrar como funciona os ganchos
     // before(function () {
@@ -45,7 +48,6 @@ describe('Cadastro', () => {      /// Se chama hero function
             cnh: 'cnh-digital.jpg'
 
         }
-        var signup = new SignupPage()
 
         signup.go()
         signup.fillForm(deliver)
@@ -84,8 +86,6 @@ describe('Cadastro', () => {      /// Se chama hero function
             cnh: 'cnh-digital.jpg'
 
         }
-
-        var signup = new SignupPage()
 
         signup.go()
         signup.fillForm(deliver)
