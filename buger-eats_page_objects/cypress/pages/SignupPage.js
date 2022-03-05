@@ -1,8 +1,8 @@
 
 class SignupPage {  // Vai representar a página de cadastro
+    
     go() {   // Esta função vai acessar a página de form de cadastro
-        cy.viewport(1440, 900)  // Resolução full HD
-        cy.visit('https://buger-eats.vercel.app/')
+        cy.visit('/')  //Aula Viewport e Base URL[cypress.json] caminho da url
 
         cy.get('a[href = "/deliver"]').click()
         cy.get('#page-deliver form h1').should('have.text', 'Cadastre-se para  fazer entregas')
