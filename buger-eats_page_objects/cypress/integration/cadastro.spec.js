@@ -1,6 +1,25 @@
 import SignupPage from '../pages/SignupPage'
 
 describe('Cadastro', () => {      /// Se chama hero function
+
+    ////**** Aula - Entendendo os ganchos do Cypress ****////
+    //**Só foi para mostrar como funciona os ganchos
+    // before(function () {
+    //     cy.log('Tudo aqui é executdo uma única vez ANTES de TODOS os casos de testes')
+    // })
+
+    // beforeEach(function () {
+    //     cy.log('Tudo aqui é executdo sempre ANTES de CADA caso de teste')
+    // })
+
+    // after(function () {
+    //     cy.log('Tudo aqui é executdo uma única vez DEPOIS de TODOS os casos de testes')
+    // })
+
+    // afterEach(function () {
+    //     cy.log('Tudo aqui é executdo sempre DEPOIS de CADA caso de teste')
+    // })
+
     it('Usuario deve se tornar um entregador', () => {
         ////**** Aula - Refatorando a massa de testes para inglês ****////
         var deliver = {
