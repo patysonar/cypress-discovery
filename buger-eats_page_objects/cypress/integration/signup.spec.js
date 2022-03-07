@@ -1,7 +1,7 @@
-////**** Aula - Trabalhando com Fixtures ****////
+////**** Aula - Padrão de nomenclatura ****////
 import signup from '../pages/SignupPage' //Instancia  da página para os casos de testes
 
-describe('Cadastro', () => {      /// Se chama hero function
+describe('Signup', () => {      /// Refatoração para inglês todos os casos de testes
 
     beforeEach(function () {
         cy.fixture('deliver').then((d) => {  //pega o resultado da massa de teste. (d) argumento
@@ -9,7 +9,7 @@ describe('Cadastro', () => {      /// Se chama hero function
         })
     })
 
-    it('Usuario deve se tornar um entregador', function () {
+    it('User should be deliver ', function () {
         var deliver = {
 
         }
@@ -22,7 +22,7 @@ describe('Cadastro', () => {      /// Se chama hero function
         signup.modalContentShouldBe(expectedMessage)
     })
 
-    it('CPF Incorreto', function () {
+    it('Incorrect document', function () {
         var deliver = {
 
         }
