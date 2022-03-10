@@ -10,10 +10,6 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     })
 
     it('User should be deliver ', function () {
-        var deliver = {
-
-        }
-
         signup.go()
         signup.fillForm(this.deliver.signup)
         signup.submit()
@@ -23,14 +19,18 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     })
 
     it('Incorrect document', function () {
-        var deliver = {
-
-        }
-
         signup.go()
         signup.fillForm(this.deliver.cpf_inv)
         signup.submit()
         signup.alertMessageShoudBe('Oops! CPF inválido')
+
+    })
+
+    it('Incorrect email', function () {
+        signup.go()
+        signup.fillForm(this.deliver.email_inv)
+        signup.submit()
+        signup.alertMessageShoudBe('Oops! Email com formato inválido.')
 
     })
 })
