@@ -13,7 +13,7 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     // })
 
     //it.skip('') ele pula um dos testes para testar depois
-   
+   //Cenarios - casos de testes
     it('User should be deliver', function () {
 
         var deliver = signupFactory.deliver()  // vai criar a massa de teste
@@ -83,3 +83,16 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     })
 
 })
+
+////**** Aula - Cypress Run com evidências em videos ****////
+//Obs:: Evidência em video só rodar:  npx cypress run -> cria a pasta e os videos já na execução
+
+////**** Aula - Screenshots quando um teste falha ****////
+//Obs:: Screenshots em imagem só rodar:  npx cypress run -> cria a pasta e os Screenshots já na execução 
+
+ ////****Aula - Executando em outros navegadores ****////
+ // npx cypress run -b chrome ->  executa o teste automatizado no chrome
+ // npx cypress run -b edge ->  executa o teste automatizado no edge - novo
+ // npx cypress run -b electron ->  executa o teste automatizado no electron
+ // npx cypress run -b firefox ->  executa o teste automatizado no firefox 
+ // npx cypress run -b chromium ->  executa o teste automatizado no chromium
