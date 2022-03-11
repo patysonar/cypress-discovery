@@ -50,7 +50,8 @@ class SignupPage {  // Vai representar a página de cadastro
 
     alertMessageShoudBe(expectedMessage) {
         ////**** Aula - Validando span de alerta ****////
-        cy.get('.alert-error').should('have.text', expectedMessage)
+        //cy.get('.alert-error').should('have.text', expectedMessage) //A função get foi preparada para receber um elemento e aobrigatóriedade tem 7
+        cy.contains('.alert-error', expectedMessage).should('be.visible')
     }
 }
 
