@@ -13,7 +13,7 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     // })
 
     //it.skip('') ele pula um dos testes para testar depois
-   
+   //Cenarios - casos de testes
     it('User should be deliver', function () {
 
         var deliver = signupFactory.deliver()  // vai criar a massa de teste
@@ -83,3 +83,5 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     })
 
 })
+
+//Obs:: Evidência em video só rodar:  npx cypress run -> cria a pasta e os videos já na execução
