@@ -47,5 +47,34 @@ Na pasta support importar o modulo na subpasta-> index.js, depois do import './c
 
 Na pasta de cadastro criar nova suite de cadastro
 
+----------------------------------------------------------------------------
+ ////****Aula - Cypress Run com evidências em videos ****////
+ 
+ npx cypress run   ->> diferente do open que abri a interface grafica e o run executa todos os cenarios em background ele abri e executa tudo.
+ E ainda cria o video de teste.
 
 
+----------------------------------------------------------------------------
+ ////****Aula - Executando em outros navegadores ****////
+ 
+ No cypress o navegador é o Electron -> é uma WEb view usada por dev para faze implementação desktop embarcada (HTML, Java Script e CSS)
+ 
+ O visual studio code - é uma aplicação web tudo feito (HTML, Java Script e CSS) dentro de um ambiente node. Basicamente é o Electron embarcado, está dentro do Electron.
+// npx cypress run -b chrome ->  executa o teste automatizado no chrome
+ // npx cypress run -b edge ->  executa o teste automatizado no edge - novo
+ // npx cypress run -b electron ->  executa o teste automatizado no electron
+ // npx cypress run -b firefox ->  executa o teste automatizado no firefox 
+ // npx cypress run -b chromium ->  executa o teste automatizado no chromium
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
