@@ -84,4 +84,8 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
 
 })
 
+////**** Aula - Cypress Run com evidências em videos ****////
 //Obs:: Evidência em video só rodar:  npx cypress run -> cria a pasta e os videos já na execução
+
+////**** Aula - Screenshots quando um teste falha ****////
+//Obs:: Screenshots em imagem só rodar:  npx cypress run -> cria a pasta e os Screenshots já na execução 
