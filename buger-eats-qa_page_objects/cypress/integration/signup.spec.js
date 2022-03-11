@@ -1,6 +1,8 @@
 ////**** Aula - Padrão de nomenclatura ****////
 import signupPage from '../pages/SignupPage' //Instancia  da página para os casos de testes
 import signupFactory from '../factories/SignupFactory' // importando o módulo
+//import { it } from 'faker/lib/locales'
+
 
 describe('Signup', () => {      /// Refatoração para inglês todos os casos de testes
 
@@ -11,7 +13,8 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
     // })
 
     //it.skip('') ele pula um dos testes para testar depois
-    it('User should be deliver ', function () {
+   
+    it('User should be deliver', function () {
 
         var deliver = signupFactory.deliver()  // vai criar a massa de teste
 
@@ -49,18 +52,34 @@ describe('Signup', () => {      /// Refatoração para inglês todos os casos de
 
     })
 
-    it('Require fields', function () {
-        signupPage.go()
-        signupPage.submit()
-        signupPage.alertMessageShoudBe('É necessário informar o nome')
-        signupPage.alertMessageShoudBe('É necessário informar o CPF')
-        signupPage.alertMessageShoudBe('É necessário informar o email')
-        signupPage.alertMessageShoudBe('É necessário informar o CEP')
-        signupPage.alertMessageShoudBe('É necessário informar o número do endereço')
-        signupPage.alertMessageShoudBe('Selecione o método de entrega')
-        signupPage.alertMessageShoudBe('Adicione uma foto da sua CNH')
+    ////**** Aula - New ITs On The Block (Step by step) ****////
+    // Validando campos obrigatórios
+    //(Step by step) se dê algum erro na validação ele não para de executar as demais
+    context('Required fields', function () {
+
+        const messages = [
+            { field: 'name', output: 'É necessário informar o nome' },
+            { field: 'cpf', output: 'É necessário informar o CPF' },
+            { field: 'email', output: 'É necessário informar o email' },
+            { field: 'postalcode', output: 'É necessário informar o CEP' },
+            { field: 'number', output: 'É necessário informar o número do endereço' },
+            { field: 'delivery_method', output: 'Selecione o método de entrega' },
+            { field: 'cnh', output: 'Adicione uma foto da sua CNH' }
+        ]
+
+        before(function () {
+            signupPage.go() //step de ação (go e submit)
+            signupPage.submit()
+
+        })
+
+        messages.forEach(function (msg) {
+            it(`${msg.field} is required`, function () {
+                signupPage.alertMessageShoudBe(msg.output)
+
+            })
+        })
 
     })
 
-    
 })
