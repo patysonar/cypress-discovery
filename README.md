@@ -77,4 +77,8 @@ Na pasta de cadastro criar nova suite de cadastro
  
  
  
+<<<<<<< HEAD
  
+=======
+ 
+>>>>>>> 3fb21c2943020206eb4607ed7887962cf89bcf26
