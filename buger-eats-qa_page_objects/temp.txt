@@ -1,0 +1,2 @@
+ ////****Aula - Cypress Dashboard ****////
+npx cypress run --record --key 5761614d-4344-4853-afa0-a874b40f71cc
