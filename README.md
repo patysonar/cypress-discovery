@@ -96,6 +96,8 @@ com o segundo codigo criar um arquivo temporadio exemplo: temp.txt -> e colocar 
   No actions salvar o arquivo e clicar no -> Cypress Regression Tests
   Obs: Para verificar se realmente funcionou o dashboard do cypress precisei separar o projeto: buger-eats-qa_page_objects para poder rodar da raiz: Funcionou e deu Certo.
   
+  Ao concluir  a ação voltar no site do cypress e será exibido o resultado no dashboards: https://dashboard.cypress.io/projects/8bbowh/runs/1/specs
+  
    
   
   
