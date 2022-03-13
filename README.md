@@ -66,19 +66,49 @@ Na pasta de cadastro criar nova suite de cadastro
  // npx cypress run -b firefox ->  executa o teste automatizado no firefox 
  // npx cypress run -b chromium ->  executa o teste automatizado no chromium
  
+ ----------------------------------------------------------------------------
+ ////****Aula - Publicando o projeto no Github ****////
+ 
+ Repositório:
+https://github.com/weareqaninja/buger-eats-cypress-discovery
+ 
+ 
+  ----------------------------------------------------------------------------
+ ////****Aula - Cypress Dashboard ****////
+ 
+ No cypres criar um projeto para poder ver os resultados online.
+ Irar gerar dois codigos 1 para por no projeto e o outro para na hora de executar ele entender e armazenar.
+ 
+com o segundo codigo criar um arquivo temporadio exemplo: temp.txt -> e colocar o segundo codigo.
+ 
+ 
+  ////****Aula - Github Actions do ZERO ao Report****////
+  
+  No Github acessra o projeto e navegar na aba actions
+  clicar no link referente a  -> set up a workflow yourself 
+  Renomear o nome do arquivo yml
+  Apagar todo conteudo do arquivo
+  pesquisar no marketplace cyprees o oficial
+  Montar o arquivo do cypress
+  temos um arquivo zip pronto.-> workflow-cypress.zip
+  Em settings criar uma chave secreta para o comando:  wait-on: ${{ secrets.BASE_URL }} informar a URL. -> será criada a variavél
+  Fazer o mesmo processo para a chave secreta de gravação -> CYPRESS_RECORD_KEY -> é neste momento que em value é colocada o segundo codigo gerado no dashboard do cypress
+  No actions salvar o arquivo e clicar no -> Cypress Regression Tests
+  Obs: Para verificar se realmente funcionou o dashboard do cypress precisei separar o projeto: buger-eats-qa_page_objects para poder rodar da raiz: Funcionou e deu Certo.
+  
+   
+  
+  
+  Código da aula
+https://github.com/weareqaninja/buger-eats-cypress-discovery
+
+
+  
+  
+
  
  
  
  
  
  
- 
- 
- 
- 
- 
-<<<<<<< HEAD
- 
-=======
- 
->>>>>>> 3fb21c2943020206eb4607ed7887962cf89bcf26
