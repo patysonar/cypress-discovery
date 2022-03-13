@@ -97,10 +97,9 @@ com o segundo codigo criar um arquivo temporadio exemplo: temp.txt -> e colocar 
   Obs: Para verificar se realmente funcionou o dashboard do cypress precisei separar o projeto: buger-eats-qa_page_objects para poder rodar da raiz: Funcionou e deu Certo.
   
    
-  
-  
-  Código da aula
-https://github.com/weareqaninja/buger-eats-cypress-discovery
+Ao concluir a ação voltar no site do cypress e será exibido o resultado no dashboards: https://dashboard.cypress.io/projects/8bbowh/runs/1/specs
+
+Código da aula https://github.com/weareqaninja/buger-eats-cypress-discovery
 
 
   
